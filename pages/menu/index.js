@@ -60,7 +60,7 @@ export default function Index() {
     <div className='max-w-screen-xl px-12 mx-auto flex gap-x-2 justify-between items-center text-xl text-neutral-700 font-bold max-md:px-2 max-sm:text-sm'>
         <p>صبحانه</p>
         <span className='flex-1'></span>
-        <Link href="/menu/breakfest" className='flex gap-1 items-center text-neutral-500'>بیشتر<IoChevronBack/></Link>
+        <Link href="/menu/breakfest" className='flex gap-1 items-center text-neutral-600'>بیشتر<IoChevronBack/></Link>
     </div>
     <section className='mt-4 mb-8 max-w-screen-xl mx-auto px-12 flex gap-4 overflow-scroll max-md:px-2 max-md:my-4'>
         {breakfest.map(item => <MenuItem key={item.id} item={item}/>)}
@@ -68,7 +68,7 @@ export default function Index() {
     <div className='max-w-screen-xl px-12 mx-auto flex gap-x-2 justify-between items-center text-xl text-neutral-700 font-bold max-md:px-2 max-sm:text-sm'>
         <p>غذای ایرانی</p>
         <span className='flex-1'></span>
-        <Link href="/menu/irani" className='flex gap-1 items-center text-neutral-500'>بیشتر <IoChevronBack/></Link>
+        <Link href="/menu/irani" className='flex gap-1 items-center text-neutral-600'>بیشتر <IoChevronBack/></Link>
     </div>
     <section className='mt-4 mb-8 max-w-screen-xl mx-auto px-12 flex gap-4 overflow-scroll max-md:px-2 max-md:my-4'>
         {irani.map(item => <MenuItem key={item.id} item={item}/>)}
@@ -76,7 +76,7 @@ export default function Index() {
     <div className='max-w-screen-xl px-12 mx-auto flex gap-x-2 justify-between items-center text-xl text-neutral-700 font-bold max-md:px-2 max-sm:text-sm'>
         <p>کافه</p>
         <span className='flex-1'></span>
-        <Link href="/menu/cafe" className='flex gap-1 items-center text-neutral-500'>بیشتر<IoChevronBack/></Link>
+        <Link href="/menu/cafe" className='flex gap-1 items-center text-neutral-600'>بیشتر<IoChevronBack/></Link>
     </div>
     <section className='mt-4 mb-8 max-w-screen-xl mx-auto px-12 flex gap-4 overflow-scroll max-md:px-2 max-md:my-4'>
         {cafe.map(item => <MenuItem key={item.id} item={item}/>)}
@@ -84,7 +84,7 @@ export default function Index() {
     <div className='max-w-screen-xl px-12 mx-auto flex gap-x-2 justify-between items-center text-xl text-neutral-700 font-bold max-md:px-2 max-sm:text-sm'>
         <p>استیک</p>
         <span className='flex-1'></span>
-        <Link href="/menu/steak" className='flex gap-1 items-center text-neutral-500'>بیشتر<IoChevronBack/></Link>
+        <Link href="/menu/steak" className='flex gap-1 items-center text-neutral-600'>بیشتر<IoChevronBack/></Link>
     </div>
     <section className='mt-4 mb-8 max-w-screen-xl mx-auto px-12 flex gap-4 overflow-scroll max-md:px-2 max-md:my-4'>
         {steak.map(item => <MenuItem key={item.id} item={item}/>)}
@@ -92,7 +92,7 @@ export default function Index() {
     <div className='max-w-screen-xl px-12 mx-auto flex  gap-x-2 justify-between items-center text-xl text-neutral-700 font-bold max-md:px-2 max-sm:text-sm'>
         <p>گیاهی</p>
         <span className='flex-1'></span>
-        <Link href="/menu/vegan" className='flex gap-1 items-center text-neutral-500'>بیشتر<IoChevronBack/></Link>
+        <Link href="/menu/vegan" className='flex gap-1 items-center text-neutral-600'>بیشتر<IoChevronBack/></Link>
     </div>
     <section className='mt-4 mb-24 max-w-screen-xl mx-auto px-12 flex gap-4 overflow-scroll max-md:px-2 max-md:my-4'>
         {vegan.map(item => <MenuItem key={item.id} item={item}/>)}
@@ -106,7 +106,7 @@ const MenuItem = ({item}) => {
         <div className='space-y-2'>
             <img loading="lazy" className='md:min-w-48 md:size-48 min-w-36 size-36 rounded-xl shadow-md object-cover' src={item.img} alt={item.name} />
             <b className='flex justify-between items-center max-sm:text-sm'>{item.name}<span className='text-primary-500 lg:text-lg'>{toPersianNumbers(item.price)}</span></b>
-            <p className='line-clamp-1 max-sm:text-sm'>{item.desc}</p>
+            <p className='line-clamp-1 max-sm:text-sm text-neutral-600'>{item.desc}</p>
         </div>
     )
 }
