@@ -12,7 +12,7 @@ export default function MainPageGallary() {
   return (
     <>
     <h4 className='index-title'>نگارخانه سیمون</h4>
-    <div className='mt-12 mb-6'>
+    <div className='md:mt-12 mt-4 mb-6'>
       <Swiper
         pagination={{
             clickable: true,

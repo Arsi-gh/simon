@@ -24,7 +24,7 @@ export default function MansionParts () {
   return (
     <>
     <h4 className='index-title'> قسمتهای مختلف عمارت سیمون</h4>
-    <section className='mt-16 mb-20 flex justify-center text-neutral-700 max-w-screen-xl mx-auto 2xl:max-w-screen-2xl max-lg:flex-col-reverse max-lg:gap-y-8 max-lg:mb-32 max-sm:overflow-hidden'>
+    <section className='mt-16 flex justify-center text-neutral-700 max-w-screen-xl mx-auto 2xl:max-w-screen-2xl max-lg:flex-col-reverse max-lg:gap-y-8 max-lg:mb-10 max-sm:overflow-hidden'>
       <div className='xl:mr-40 w-[30rem] flex flex-col justify-center gap-6 relative lg:mr-20 max-lg:text-center max-lg:mx-auto max-md:text-sm max-md:items-center max-sm:w-full max-sm:gap-y-2 max-sm:px-6'>
         <b className='text-2xl font-bold max-sm:text-lg'>{datas[activePart].title}</b>
         <p className='text-justify'>{datas[activePart].desc}</p>

@@ -4,7 +4,7 @@ export default function SpecialEvents() {
   return (
     <>
     <h4 className='index-title'>برگزاری جشنها و تولدها در عمارت سیمون</h4>
-    <div className="my-16 max-w-screen-xl mx-auto flex gap-4 justify-evenly 2xl:max-w-screen-2xl max-lg:flex-col max-lg:px-12 max-sm:px-6">
+    <div className="md:my-16 my-4 max-w-screen-xl mx-auto flex gap-4 justify-evenly 2xl:max-w-screen-2xl max-lg:flex-col max-lg:px-12 max-sm:px-6">
         <div className="rounded-xl overflow-hidden w-[20rem] h-[22rem] max-xl:w-[25%] max-lg:h-36 max-lg:w-full relative">
             <img loading="lazy" className="w-full h-full object-cover" src="/images/designs/1.jpeg" alt="birthday-event" />
             <div className="group absolute bottom-0 w-full h-full p-1 px-2 bg-black bg-opacity-60 grid place-items-center text-white transition-all duration-500 hover:bg-opacity-80">
