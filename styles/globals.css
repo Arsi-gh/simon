@@ -1,0 +1,98 @@
+@import url("./fonts.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    &{
+      --color-primary-700: 142, 128, 106;
+      --color-primary-600: 195, 176, 145;
+      --color-primary-500: 197, 171, 107;
+      --color-primary-400: 228, 205, 167;
+      --color-primary-300: 255, 230, 188;
+    }
+  }
+}
+
+@layer components {
+  .menu-title {
+    @apply w-full text-center my-2 text-3xl text-primary-500 font-bold max-sm:text-xl;
+  }
+
+  .index-title {
+    @apply mx-auto w-fit text-3xl font-bold text-neutral-700 max-sm:text-base
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Vazir";
+  direction: rtl;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.swiper {
+  width: 320px;
+  height: 420px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.index-gallary {
+  width: 1200px;
+  height: 450px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(202, 202, 202);
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 460px) {
+  .swiper {
+    width: 45%;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .swiper {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .index-gallary {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .index-gallary {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .index-gallary {
+    width: 60%;
+  }
+}
